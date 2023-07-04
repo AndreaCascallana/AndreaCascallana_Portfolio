@@ -1,0 +1,22 @@
+.card
+    @apply bg-slate-50
+    @apply border-[1px] border-slate-950
+    @apply rounded-lg
+    @apply flex flex-col md:grid md:grid-cols-2 gap-4
+    figure
+        @apply md:col-span-1
+        img
+            @apply rounded-lg
+    .card-body
+        @apply md:col-span-1
+        @apply flex flex-col justify-between
+        @apply rounded-lg
+        @apply p-6 md:p-8
+        .card-text-content
+            @apply flex flex-col md:gap-4
+            .card-title
+                @apply font-bold uppercase text-lg
+        .card-actions
+            @apply mt-4
+            a
+                @apply w-full
