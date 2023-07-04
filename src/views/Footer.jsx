@@ -15,6 +15,7 @@ const Footer = () => {
           <a
             className="linkedin w-8 h-8 bg-slate-950 rounded-full hover:bg-[#0a66c2] transition-colors duration-150 ease-in-out"
             href="https://www.linkedin.com/in/andrea-cascallana-rodr%C3%ADguez-b35803249/"
+            target="_blank"
             style={{
               backgroundImage: `url(${Linkedin})`,
               backgroundPositionX: "50%",
@@ -26,6 +27,7 @@ const Footer = () => {
           <a
             className="github w-8 h-8 bg-slate-950 rounded-full hover:bg-[#1F2328] transition-colors duration-150 ease-in-out"
             href="https://github.com/AndreaCascallana"
+            target="_blank"
             style={{
               backgroundImage: `url(${Github})`,
               backgroundPositionX: "50%",
