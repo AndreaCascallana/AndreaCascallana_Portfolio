@@ -7,8 +7,34 @@ const Contact = () => {
         <p className="badge badge-outline">03</p>
         <p className="font-bold uppercase text-lg">¡Hablemos!</p>
         <div className="btn btn-ghost animate-bounce w-fit hover:bg-transparent">
-          <span class="material-symbols-outlined hidden lg:block hover:bg-transparent">arrow_right_alt</span>
-          <span class="material-symbols-outlined block lg:hidden hover:bg-transparent">arrow_downward</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="#020617"
+            className="w-5 h-5 bg-transparent hidden lg:block hover:bg-transparent"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="#020617"
+            className="w-5 h-5 bg-transparent block lg:hidden hover:bg-transparent"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+            />
+          </svg>
         </div>
       </div>
       <div className="contact-right-content lg:col-span-2 lg:mt-9">
@@ -23,14 +49,14 @@ const Contact = () => {
           >
             andreacascallanarodriguez@gmail.com
           </a>
-          <a
-            className="btn btn-primary text-lg w-full block lg:hidden"
-            href="mailto:andreacascallanarodriguez@gmail.com?subject=¡Hola%20Andrea!"
-            target="_blank"
-          >
-            Envíame un mail
-          </a>
         </div>
+        <a
+          className="btn btn-primary text-lg w-full block lg:hidden"
+          href="mailto:andreacascallanarodriguez@gmail.com?subject=¡Hola%20Andrea!"
+          target="_blank"
+        >
+          Envíame un mail
+        </a>
       </div>
     </div>
   );
