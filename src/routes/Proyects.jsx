@@ -33,13 +33,6 @@ const Proyects = () => {
             description="Key es una plataforma digital de oferta y demanda de espacios de trabajo específicos para perfiles profesionales creativos."
             url="https://www.figma.com/proto/vBGOQlWlTbW4zwxav7R333/KEY_Portfolio-AndreaCascallana?page-id=1701%3A43853&type=design&node-id=1702-44740&viewport=515%2C342%2C0.24&t=cnNtDriHN5WKzenS-1&scaling=scale-down&mode=design"
           />
-          <ProyectSingle
-            name="MiraMuseo"
-            picture="/mira-museo.png"
-            alt="MiraMuseo proyect"
-            description="MiraMuseo es una aplicación que transforma los museos en espacios interactivos, gamificados, cercanos y casuales con el objetivo de atraer a un público más joven."
-            url="https://www.behance.net/gallery/174064291/MiraMuseo-App"
-          />
         </div>
       </div>
     </div>
