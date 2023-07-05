@@ -10,9 +10,7 @@ const About = () => {
   return (
     <div className="about-container py-10 mb-10 lg:py-20 flex flex-col gap-14">
       <div className="about-top-content">
-        <div
-          className={retrato}
-        ></div>
+        <div className={retrato}></div>
       </div>
       <div className="about-bottom-content flex flex-col gap-8 lg:grid lg:grid-cols-3 lg:gap-4">
         <div className="about-bottom-left-content lg:col-span-1 flex flex-col gap-4">
@@ -34,23 +32,44 @@ const About = () => {
                 Desde el 2021 he estado involucrada en equipos
                 multidisciplinares dentro del grupo de investigación de la
                 Universidad Politécnica de Madrid llamado{" "}
-                <a className="underline hover:text-slate-600 transition-colors duration-150 ease-in-out" href="https://ging.github.io/">
+                <a
+                  className="underline hover:text-slate-600 transition-colors duration-150 ease-in-out"
+                  href="https://ging.github.io/"
+                  target="_blank"
+                >
                   Grupo Internet Nueva Generación
                 </a>{" "}
                 (GING).
               </p>
               <p className="max-w-prose text-xl lg:text-2xl">
                 Aquí he tenido la oportunidad de colaborar en una amplia
-                variedad de proyectos como plataformas de interpretación
-                simultánea, o aplicaciones europeas de datos abiertos.
+                variedad de proyectos como{" "}
+                <a
+                  className="underline hover:text-slate-600 transition-colors duration-150 ease-in-out"
+                  href="https://smarterp.me/"
+                  target="_blank"
+                >
+                  plataformas de interpretación simultánea
+                </a>
+                , o{" "}
+                <a
+                  className="underline hover:text-slate-600 transition-colors duration-150 ease-in-out"
+                  href="https://yoda.dit.upm.es/"
+                  target="_blank"
+                >
+                  aplicaciones europeas de datos abiertos
+                </a>
+                .
               </p>
               <p className="max-w-prose text-xl lg:text-2xl">
-                En ellos intervengo como diseñadora UX/UI desarrollando
-                soluciones digitales sustentadas por sistemas de diseño
+                En ellos intervengo como{" "}
+                <span className="font-semibold">diseñadora UX/UI</span>{" "}
+                desarrollando soluciones digitales sustentadas por{" "}
+                <span className="font-semibold">sistemas de diseño</span>{" "}
                 personalizados. Posteriormente, todo ello es traducido al{" "}
                 <span className="italic">front-end</span> del proyecto mediante
-                una maquetación web{" "}
-                <span className="italic">pixel perfect</span>.
+                una <span className="font-semibold">maquetación web{" "}
+                <span className="italic">pixel perfect</span></span>.
               </p>
             </div>
             <div className="about-bottom-right-bottom-content flex flex-col gap-4">
