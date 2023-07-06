@@ -20,11 +20,11 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className="tooltip w-full lg:w-fit"
+          className="tooltip w-full lg:w-fit hidden lg:block"
           data-tip="Haz click para enviarme un mail"
         >
           <a
-            className="btn btn-primary text-lg w-full block lg:hidden"
+            className="btn btn-rounded text-lg w-full hidden lg:block"
             href="mailto:andreacascallanarodriguez@gmail.com?subject=¡Hola%20Andrea!"
             target="_blank"
           >
@@ -32,7 +32,7 @@ const Hero = () => {
           </a>
         </div>
         <a
-          className="btn btn-rounded text-lg w-fit hidden lg:block"
+          className="btn btn-primary text-lg w-fit block lg:hidden"
           href="mailto:andreacascallanarodriguez@gmail.com?subject=¡Hola%20Andrea!"
           target="_blank"
         >
