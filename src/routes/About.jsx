@@ -66,7 +66,7 @@ const About = () => {
                 <span className="font-semibold">diseñadora UX/UI</span>{" "}
                 desarrollando soluciones digitales sustentadas por{" "}
                 <span className="font-semibold">sistemas de diseño</span>{" "}
-                personalizados. Posteriormente, todo ello es traducido al{" "}
+                personalizados. Posteriormente traduzco dichas propuestas de diseño al{" "}
                 <span className="italic">front-end</span> del proyecto mediante
                 una <span className="font-semibold">maquetación web{" "}
                 <span className="italic">pixel perfect</span></span>.
