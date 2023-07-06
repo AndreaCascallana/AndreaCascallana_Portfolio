@@ -43,10 +43,16 @@ const App = () => {
   return (
     <div className="app m-auto w-screen px-6 lg:w-10/12 xl:w-10/12 2xl:w-10/12">
       <div className="menu flex flex-row justify-between items-center sticky top-0 z-50 py-4 pl-0 pr-0">
-        <div className="menuItem cursor-pointer uppercase font-bold hidden lg:block xl:block 2xl:block" onClick={handleClick}>
+        <div
+          className="menuItem cursor-pointer uppercase font-bold hidden lg:block xl:block 2xl:block"
+          onClick={handleClick}
+        >
           ANDREA CASCALLANA
         </div>
-        <div className="menuItem cursor-pointer uppercase font-bold lg:hidden xl:hidden 2xl:hiden" onClick={handleClick}>
+        <div
+          className="menuItem cursor-pointer uppercase font-bold lg:hidden xl:hidden 2xl:hiden"
+          onClick={handleClick}
+        >
           A
         </div>
         <div

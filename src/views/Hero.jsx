@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div className="hero-top flex flex-col gap-10 py-10 lg:gap-8 lg:py-20">
+      <div className="hero-top flex flex-col gap-10 py-10 lg:gap-12 lg:py-20">
         <div className="text-content flex flex-col gap-10">
           <div className="title flex gap-1">
             <p className="title text-4xl font-bold lg:text-9xl lg:leading-[116px] xl:text-9xl xl:leading-[116px] 2xl:text-9xl 2xl:leading-[116px]">
