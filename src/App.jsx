@@ -78,8 +78,8 @@ const App = () => {
         </div>
         <a
           className="btn btn-rounded hidden lg:block xl:block 2xl:block"
-          href="AndreaCascallana_CV.pdf"
-          download="AndreaCascallanaCV"
+          href="Andrea-Cascallana_CV.pdf"
+          download="AndreaCascallana_CV"
         >
           Descarga mi CV
         </a>

@@ -7,7 +7,7 @@ const Proyects = () => {
       <div className="proyects-top-content-container lg:col-span-1">
         <div className="proyects-top-content flex flex-col gap-4">
           <p className="badge badge-outline">01</p>
-          <p className="font-bold uppercase text-lg">Proyectos seleccionados</p>
+          <p className="font-bold uppercase text-lg">Selección de proyectos</p>
         </div>
       </div>
       <div className="proyects-bottom-content lg:col-span-2">

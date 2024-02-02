@@ -4,7 +4,7 @@ import Github from "/github.svg";
 
 const Footer = () => {
   return (
-    <div className="py-12 lg:py-16 flex justify-between">
+    <div className="py-12 lg:py-16 flex justify-between items-center">
       <p className="text-sm font-light hidden lg:block">
         Diseñado y desarrollado por{" "}
         <span className="font-medium">Andrea Cascallana</span>
@@ -38,8 +38,8 @@ const Footer = () => {
           ></a>
         </div>
       </div>
-      <p className="text-sm font-light w-[125px] text-end hidden lg:block">
-        2023
+      <p className="text-sm font-light text-end hidden lg:block">
+        Última actualización 2024
       </p>
     </div>
   );
