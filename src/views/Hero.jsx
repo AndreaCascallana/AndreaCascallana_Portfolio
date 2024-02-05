@@ -2,43 +2,13 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
-      <div className="hero-top flex flex-col gap-10 py-10 lg:gap-12 lg:py-20">
-        <div className="text-content flex flex-col gap-10">
-          <div className="title flex gap-1">
-            <p className="title text-4xl font-bold lg:text-9xl lg:leading-[116px] xl:text-9xl xl:leading-[116px] 2xl:text-9xl 2xl:leading-[116px]">
-              ANDREA CASCALLANA
-            </p>
-          </div>
-          <div className="subtitle flex flex-col gap-1">
-            <p className="text-2xl font-medium lg:text-4xl xl:text-4xl 2xl:text-4xl">
-              Diseñadora UX/UI
-            </p>
-            <p className="text-2xl font-medium lg:text-4xl xl:text-4xl 2xl:text-4xl">
-              y desarrolladora <span className="italic">front-end</span>.
-            </p>
-          </div>
-        </div>
-        <div
-          className="tooltip w-full lg:w-fit hidden lg:block"
-          data-tip="Haz click para enviarme un mail"
-        >
-          <a
-            className="btn btn-rounded text-lg w-full hidden lg:block"
-            href="mailto:andreacascallanarodriguez@gmail.com?subject=¡Hola%20Andrea!"
-            target="_blank"
-          >
-            ¡Contáctame!
-          </a>
-        </div>
-        <a
-          className="btn btn-primary text-lg w-fit block lg:hidden"
-          href="mailto:andreacascallanarodriguez@gmail.com?subject=¡Hola%20Andrea!"
-          target="_blank"
-        >
-          ¡Contáctame!
-        </a>
-      </div>
+    <div className="hero-container py-10 flex items-center gap-5 h-full">
+      <a className="img-container h-fit" target="_blank" href="https://www.figma.com/proto/flIm7U52v8NEzvN0bf4aWr/PLICOGA_Portfolio-AndreaCascallana?page-id=601%3A12980&type=design&node-id=604-14990&viewport=-2227%2C6241%2C1.04&t=wbfrA5xHUsyl39Vy-1&scaling=contain&mode=design">
+        <img className="w-full h-full object-contain rounded-md" src="/plicoga.png" alt="plicoga" />
+      </a>
+      <a className="img-container h-fit" target="_blank" href="https://www.figma.com/proto/vBGOQlWlTbW4zwxav7R333/KEY_Portfolio-AndreaCascallana?page-id=1701%3A43853&type=design&node-id=1702-44740&viewport=490%2C772%2C1.04&t=0Hw1QT2iagNp9Arc-1&scaling=contain">
+        <img className="w-full h-full object-contain rounded-md" src="/key.png" alt="plicoga" />
+      </a>
     </div>
   );
 };

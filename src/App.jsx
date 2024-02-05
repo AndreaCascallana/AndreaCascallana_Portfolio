@@ -1,105 +1,56 @@
-import React, { useRef } from "react";
-import About from "./routes/About";
-import Proyects from "./routes/Proyects";
-import Contact from "./routes/Contact";
-import Hero from "./views/Hero";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import Routing from "./Routing";
 import Footer from "./views/Footer";
 
 const App = () => {
-  const menuItemProyectos = document.querySelector(".menuItemProyectos");
-  const menuItemSobreMi = document.querySelector(".menuItemSobreMi");
-  const menuItemContacto = document.querySelector(".menuItemContacto");
-  const menuItem = document.querySelector(".menuItem");
-
-  const proyects = useRef(null);
-  const about = useRef(null);
-  const contact = useRef(null);
-
-  const handleClickProyects = () => {
-    proyects.current?.scrollIntoView();
-    menuItemProyectos.classList.add("btn-link-active");
-    menuItemSobreMi.classList.remove("btn-link-active");
-    menuItemContacto.classList.remove("btn-link-active");
-  };
-  const handleClickAbout = () => {
-    about.current?.scrollIntoView();
-    menuItemSobreMi.classList.add("btn-link-active");
-    menuItemProyectos.classList.remove("btn-link-active");
-    menuItemContacto.classList.remove("btn-link-active");
-  };
-  const handleClickContact = () => {
-    contact.current?.scrollIntoView();
-    menuItemContacto.classList.add("btn-link-active");
-    menuItemProyectos.classList.remove("btn-link-active");
-    menuItemSobreMi.classList.remove("btn-link-active");
-  };
-  const handleClick = () => {
-    window.scrollTo(0, 0);
-    menuItemContacto.classList.remove("btn-link-active");
-    menuItemProyectos.classList.remove("btn-link-active");
-    menuItemSobreMi.classList.remove("btn-link-active");
-  };
-
   return (
-    <div className="app m-auto w-screen px-6 lg:w-10/12 xl:w-10/12 2xl:w-10/12">
-      <div className="menu flex flex-row justify-between items-center sticky top-0 z-50 py-4 pl-0 pr-0">
-        <div
-          className="menuItem cursor-pointer uppercase font-bold hidden lg:block xl:block 2xl:block"
-          onClick={handleClick}
+    <div className="app m-auto w-screen h-screen lg:w-10/12 xl:w-10/12 2xl:w-10/12 flex flex-col py-8">
+      <div className="menu flex flex-row justify-between items-center z-50 pr-0 sticky top-0">
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "cursor-pointer uppercase hidden lg:block xl:block 2xl:block border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
+              : "cursor-pointer uppercase hidden lg:block xl:block 2xl:block border-0 transition-all duration-150 ease-out"
+          }
+          to="/"
         >
           ANDREA CASCALLANA
-        </div>
-        <div
-          className="menuItem cursor-pointer uppercase font-bold lg:hidden xl:hidden 2xl:hiden"
-          onClick={handleClick}
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "cursor-pointer uppercase lg:hidden xl:hidden 2xl:hiden border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
+              : "cursor-pointer uppercase lg:hidden xl:hidden 2xl:hiden border-0 transition-all duration-150 ease-out"
+          }
+          to="/"
         >
           A
-        </div>
-        <div
-          className="btn btn-link menuItemProyectos"
-          onClick={handleClickProyects}
-          to="/#proyectos"
-        >
-          Proyectos
-        </div>
-        <div
-          className="btn btn-link menuItemSobreMi"
-          onClick={handleClickAbout}
-          to="/#sobre-mi"
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "cursor-pointer uppercase hidden lg:block xl:block 2xl:block border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
+              : "cursor-pointer uppercase hidden lg:block xl:block 2xl:block border-0 transition-all duration-150 ease-out"
+          }
+          to="/about"
         >
           Sobre mí
-        </div>
-        <div
-          className="btn btn-link menuItemContacto"
-          onClick={handleClickContact}
-          to="/#contacto"
-        >
-          Contacto
-        </div>
+        </NavLink>
         <a
-          className="btn btn-rounded hidden lg:block xl:block 2xl:block"
+          className="uppercase border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
           href="Andrea-Cascallana_CV.pdf"
           download="AndreaCascallana_CV"
         >
-          Descarga mi CV
+          [Descarga mi CV]
         </a>
       </div>
 
-      <div className="main">
-        <div ref={menuItem}>
-          <Hero />
-        </div>
-        <div id="proyectos" ref={proyects}>
-          <Proyects />
-        </div>
-        <div id="sobre-mi" ref={about}>
-          <About />
-        </div>
-        <div id="contacto" ref={contact}>
-          <Contact />
-        </div>
-        <Footer />
+      <div className="main grow">
+        <Routing></Routing>
       </div>
+
+      <Footer></Footer>
     </div>
   );
 };

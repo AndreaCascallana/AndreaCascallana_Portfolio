@@ -1,16 +1,16 @@
 import React from "react";
 import Linkedin from "/linkedin.svg";
 import Github from "/github.svg";
+import Behance from "/behance.svg";
 
 const Footer = () => {
   return (
-    <div className="py-12 lg:py-16 flex justify-between items-center">
-      <p className="text-sm font-light hidden lg:block">
-        Diseñado y desarrollado por{" "}
-        <span className="font-medium">Andrea Cascallana</span>
+    <div className="flex justify-between items-center">
+      <p className="text-sm hidden lg:block">
+        Diseñado y desarrollado por Andrea Cascallana
       </p>
-      <div className="links flex flex-col lg:flex-row gap-3 items-center">
-        <p className="text-sm font-light">Sígueme en</p>
+      <div className="links flex flex-col lg:flex-row gap-3 items-center justify-end lg+ w-[313px]">
+        <p className="text-sm">Sígueme en</p>
         <div className="links flex items-center gap-3">
           <a
             className="linkedin w-8 h-8 bg-slate-950 rounded-full hover:bg-[#0a66c2] transition-colors duration-150 ease-in-out"
@@ -36,9 +36,21 @@ const Footer = () => {
               backgroundRepeat: "no-repeat",
             }}
           ></a>
+          <a
+            className="github w-8 h-8 bg-slate-950 rounded-full hover:bg-[#0057ff] transition-colors duration-150 ease-in-out"
+            href="https://www.behance.net/andreacascallana"
+            target="_blank"
+            style={{
+              backgroundImage: `url(${Behance})`,
+              backgroundPositionX: "50%",
+              backgroundPositionY: "50%",
+              backgroundSize: "20px",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></a>
         </div>
       </div>
-      <p className="text-sm font-light text-end hidden lg:block">
+      <p className="text-sm text-end hidden lg:block w-[313px]">
         Última actualización 2024
       </p>
     </div>
