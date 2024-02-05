@@ -38,11 +38,11 @@ const App = () => {
           Sobre mí
         </NavLink>
         <a
-          className="uppercase border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
+          className="uppercase border-b-slate-950 transition-all duration-150 ease-out"
           href="Andrea-Cascallana_CV.pdf"
           download="AndreaCascallana_CV"
         >
-          [Descarga mi CV]
+          Descarga mi CV
         </a>
       </div>
 
