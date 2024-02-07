@@ -10,8 +10,8 @@ const App = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "cursor-pointer uppercase hidden lg:block xl:block 2xl:block border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
-              : "cursor-pointer uppercase hidden lg:block xl:block 2xl:block border-0 transition-all duration-150 ease-out"
+              ? "cursor-pointer uppercase font-semibold hidden lg:block xl:block 2xl:block border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
+              : "cursor-pointer uppercase font-semibold hidden lg:block xl:block 2xl:block border-0 transition-all duration-150 ease-out"
           }
           to="/"
         >
@@ -20,8 +20,8 @@ const App = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "cursor-pointer uppercase lg:hidden xl:hidden 2xl:hiden border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
-              : "cursor-pointer uppercase lg:hidden xl:hidden 2xl:hiden border-0 transition-all duration-150 ease-out"
+              ? "cursor-pointer uppercase font-semibold lg:hidden xl:hidden 2xl:hiden border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
+              : "cursor-pointer uppercase font-semibold lg:hidden xl:hidden 2xl:hiden border-0 transition-all duration-150 ease-out"
           }
           to="/"
         >
@@ -30,22 +30,22 @@ const App = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "cursor-pointer uppercase border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
-              : "cursor-pointer uppercase border-0 transition-all duration-150 ease-out"
+              ? "cursor-pointer uppercase font-semibold border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out"
+              : "cursor-pointer uppercase font-semibold border-0 transition-all duration-150 ease-out"
           }
           to="/about"
         >
           Sobre mí
         </NavLink>
         <a
-          className="uppercase hidden lg:block xl:block 2xl:block border-b-slate-950 transition-all duration-150 ease-out"
+          className="uppercase font-semibold hidden lg:block xl:block 2xl:block border-b-slate-950 transition-all duration-150 ease-out"
           href="Andrea-Cascallana_CV.pdf"
           download="AndreaCascallana_CV"
         >
           Descarga mi CV
         </a>
         <a
-          className="uppercase lg:hidden xl:hidden 2xl:hiden border-b-slate-950 transition-all duration-150 ease-out"
+          className="uppercase font-semibold lg:hidden xl:hidden 2xl:hiden border-b-slate-950 transition-all duration-150 ease-out"
           href="Andrea-Cascallana_CV.pdf"
           download="AndreaCascallana_CV"
         >
