@@ -36,7 +36,7 @@ const About = () => {
                   href="https://www.redbility.com/"
                   target="_blank"
                 >
-                  consultoras
+                  consultoras{" "}
                 </a>
                 donde he colaborado en proyectos para pequeñas empresas y
                 reconocidas multinacionales.
@@ -61,28 +61,28 @@ const About = () => {
             </div>
             <div className="content flex flex-col gap-1">
               <a
-                className="hidden lg:block xl:block 2xl:block border-b-[1px] border-b-slate-950 w-fit"
+                className="hidden lg:block xl:block 2xl:block border-b-[1px] border-b-slate-950 w-fit hover:text-slate-600 transition-colors duration-150 ease-in-out"
                 href="mailto:andreacascallanarodriguez@gmail.com?subject=¡Hola%20Andrea!"
                 target="_blank"
               >
                 andreacascallanarodriguez@gmail.com
               </a>
               <a
-                className="lg:hidden border-b-[1px] border-b-slate-950 w-fit"
+                className="lg:hidden border-b-[1px] border-b-slate-950 w-fit hover:text-slate-600 transition-colors duration-150 ease-in-out"
                 href="mailto:andreacascallanarodriguez@gmail.com?subject=¡Hola%20Andrea!"
                 target="_blank"
               >
                 Email
               </a>
               <a
-                className="border-b-[1px] border-b-slate-950 w-fit"
+                className="border-b-[1px] border-b-slate-950 w-fit hover:text-slate-600 transition-colors duration-150 ease-in-out"
                 href="https://www.linkedin.com/in/andrea-cascallana-rodr%C3%ADguez-b35803249/"
                 target="_blank"
               >
                 Linkedin
               </a>
               <a
-                className="border-b-[1px] border-b-slate-950 w-fit"
+                className="border-b-[1px] border-b-slate-950 w-fit hover:text-slate-600 transition-colors duration-150 ease-in-out"
                 href="https://github.com/AndreaCascallana"
                 target="_blank"
               >
