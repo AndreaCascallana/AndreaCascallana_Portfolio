@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="title hidden lg:block uppercase font-semibold pb-1">
             PLICOGA
           </div>
-          <div className="subtitle hidden lg:block pb-4">UX/UI Design</div>
+          <div className="subtitle hidden lg:block pb-4">UX/UI Design + Front-End Development</div>
           <a
             className="right-wrapper"
             target="_blank"
