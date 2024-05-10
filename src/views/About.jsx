@@ -17,8 +17,7 @@ const About = () => {
             </div>
             <div className="content flex flex-col gap-1">
               <p className="max-w-prose">
-                UX/UI Designer y Front-End Developer, pero sobretodo muy{" "}
-                <span className="italic">friki</span> de los Sistemas de Diseño.
+                UX/UI Designer y Front-End Developer, pero sobretodo muy friki de los Sistemas de Diseño.
               </p>
               <p className="max-w-prose">
                 Tengo experiencia trabajando junto a equipos multidisciplinares
@@ -40,10 +39,6 @@ const About = () => {
                 </a>
                 donde he colaborado en proyectos para pequeñas empresas y
                 reconocidas multinacionales.
-              </p>
-              <p className="max-w-prose pt-4">
-                En el terreno personal, todo el peso de mi personalidad lo
-                llevan a cuestas mi flequillo y aros.
               </p>
             </div>
           </div>

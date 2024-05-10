@@ -36,14 +36,14 @@ const Header = () => {
       </NavLink>
       <a
         className="uppercase hidden lg:block border-b-slate-950 transition-all duration-150 ease-out"
-        href="Andrea-Cascallana_CV.pdf"
+        href="AndreaCascallana_CV.pdf"
         download="AndreaCascallana_CV"
       >
         Descarga mi CV
       </a>
       <a
         className="uppercase lg:hidden border-b-slate-950 transition-all duration-150 ease-out"
-        href="Andrea-Cascallana_CV.pdf"
+        href="AndreaCascallana_CV.pdf"
         download="AndreaCascallana_CV"
       >
         CV
