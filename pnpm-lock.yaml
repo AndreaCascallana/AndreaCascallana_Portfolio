@@ -5,6 +5,7 @@ specifiers:
   '@types/react': ^18.0.37
   '@types/react-dom': ^18.0.11
   '@vitejs/plugin-react': ^4.0.0
+  animate.css: ^4.1.1
   autoprefixer: ^10.4.14
   classnames: ^2.3.2
   daisyui: ^3.1.6
@@ -23,6 +24,7 @@ specifiers:
 
 dependencies:
   '@heroicons/react': 2.0.18_react@18.2.0
+  animate.css: 4.1.1
   classnames: 2.3.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -707,6 +709,10 @@ packages:
       readable-stream: 1.1.14
       safe-buffer: 5.2.1
     dev: true
+
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
+    dev: false
 
   /ansi-regex/5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
