@@ -23,11 +23,12 @@ img
     @apply hover:text-slate-600
 
 .cursor
-    height: 40px
-    width: 40px
+    height: 20px
+    width: 20px
     border-radius: 50%
     position: fixed
     transform: translate(-50%, -50%)
+    transition: width 350ms ease, height 350ms ease
     pointer-events: none
     background: #f8fafc
     mix-blend-mode: difference
@@ -35,6 +36,6 @@ img
 
 body:has(a:hover) .cursor
     transform: translate(-50%, -50%)
-    height: 60px
-    width: 60px
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out
+    height: 40px
+    width: 40px
+    transition: width 350ms ease, height 350ms ease
