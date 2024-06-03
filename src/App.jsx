@@ -4,6 +4,28 @@ import Header from "./components/Header";
 import Routing from "./Routing";
 
 const App = () => {
+  const cursor = document.querySelectorAll(".cursor");
+
+  window.addEventListener("mousemove", (e) => {
+    let x = e.pageX;
+    let y = e.pageY;
+    let path = e.composedPath();
+
+    cursor.forEach((el) => {
+      el.style.left = `${x}px`;
+      el.style.top = `${y}px`;
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          el.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          el.classList.remove("hover");
+        });
+      });
+    });
+  });
+  
   return (
     <div className="app m-auto w-screen h-screen lg:w-10/12 flex flex-col py-8">
       <Header></Header>
