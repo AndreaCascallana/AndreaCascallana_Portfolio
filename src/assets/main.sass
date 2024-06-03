@@ -7,12 +7,12 @@
     @apply bg-slate-50
 
 body
-    @apply cursor-none
+    @apply cursor-auto md:cursor-none lg:cursor-none
 
 a
     @apply h-fit w-fit min-h-0
     @apply bg-transparent
-    @apply cursor-none
+    @apply cursor-auto md:cursor-none
 
 img
     @apply rounded-md
@@ -23,19 +23,29 @@ img
     @apply hover:text-slate-600
 
 .cursor
-    height: 20px
-    width: 20px
-    border-radius: 50%
-    position: fixed
+    @apply invisible md:visible lg:visible
+    @apply h-5 w-5
+    @apply rounded-[50%]
+    @apply fixed
+    @apply bg-slate-50
+    @apply z-50
+    @apply pointer-events-none
+    @apply mix-blend-difference
     transform: translate(-50%, -50%)
     transition: width 350ms ease, height 350ms ease
-    pointer-events: none
-    background: #f8fafc
-    mix-blend-mode: difference
-    z-index: 999999
+    .cursor-text
+        @apply invisible
 
 body:has(a:hover) .cursor
+    @apply h-10 w-10
     transform: translate(-50%, -50%)
-    height: 40px
-    width: 40px
     transition: width 350ms ease, height 350ms ease
+
+body:has(img:hover) .cursor
+    @apply h-36 w-36
+    @apply flex justify-center items-center
+    @apply backdrop-blur-sm backdrop-grayscale
+    .cursor-text
+        @apply visible
+        @apply text-center font-medium
+        @apply delay-150
