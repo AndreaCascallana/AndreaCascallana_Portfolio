@@ -5,16 +5,14 @@
 *, html, body
     @apply font-body text-slate-950
     @apply bg-slate-50
-    // @apply lg:overflow-hidden
-    // @apply border-[1px] border-red-400
 
-body
-    @apply cursor-none
+// body
+//     @apply cursor-none
 
 a
     @apply h-fit w-fit min-h-0
     @apply bg-transparent
-    @apply cursor-none
+    // @apply cursor-none
 
 img
     @apply rounded-md
@@ -24,19 +22,20 @@ img
     @apply border-b-[1px] border-b-slate-950
     @apply hover:text-slate-600
 
-.cursor
-    height: 40px
-    width: 40px
-    border-radius: 50%
-    position: fixed
-    transform: translate(-50%, -50%)
-    pointer-events: none
-    background: #f8fafc
-    mix-blend-mode: difference
-    z-index: 999999
 
-body:has(a:hover) .cursor
-    transform: translate(-50%, -50%)
-    height: 60px
-    width: 60px
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out
+// .cursor
+//     height: 40px
+//     width: 40px
+//     border-radius: 50%
+//     position: fixed
+//     transform: translate(-50%, -50%)
+//     pointer-events: none
+//     background: #f8fafc
+//     mix-blend-mode: difference
+//     z-index: 999999
+
+// body:has(a:hover) .cursor
+//     transform: translate(-50%, -50%)
+//     height: 60px
+//     width: 60px
+//     transition: width 0.2s ease-in-out, height 0.2s ease-in-out
