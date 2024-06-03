@@ -7,8 +7,8 @@ const App = () => {
   const cursor = document.querySelectorAll(".cursor");
 
   window.addEventListener("mousemove", (e) => {
-    let x = e.pageX;
-    let y = e.pageY;
+    let x = e.clientX;
+    let y = e.clientY;
     let path = e.composedPath();
 
     cursor.forEach((el) => {
