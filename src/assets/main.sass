@@ -38,10 +38,14 @@ img
 
 body:has(a:hover) .cursor
     @apply h-10 w-10
+    @apply backdrop-grayscale
     transform: translate(-50%, -50%)
     transition: width 350ms ease, height 350ms ease
 
 body:has(img:hover) .cursor
+    @apply backdrop-grayscale
+
+body:has(.project-preview:hover) .cursor
     @apply h-36 w-36
     @apply flex justify-center items-center
     @apply backdrop-blur-sm backdrop-grayscale
