@@ -2,12 +2,12 @@ import React from "react";
 
 const Key = () => {
   return (
-    <div className="key flex flex-col gap-28 pb-28">
+    <div className="key flex flex-col gap-28 pb-12 lg:pb-28">
       {/* Hero */}
       <section className="hero flex flex-col justify-start gap-4 animate__animated animate__fadeInUp">
         <div className="title flex flex-col gap-1 w-full">
           <h1 className="proyect-name">KEY</h1>
-          <h2 className="subtitle font-semibold text-4xl w-3/5">
+          <h2 className="subtitle font-semibold text-4xl w-full lg:w-3/5">
             ¿Buscamos tu próximo espacio de trabajo con Key?
           </h2>
         </div>
@@ -15,9 +15,9 @@ const Key = () => {
       </section>
 
       {/* Resumen */}
-      <section className="resumen flex justify-between gap-4 animate__animated animate__fadeInUp">
-        <h3 className="title font-semibold text-2xl w-1/2">[01] Resumen</h3>
-        <div className="text flex flex-col gap-4 w-1/2 mt-3">
+      <section className="resumen flex flex-col lg:flex-row lg:justify-between gap-4 animate__animated animate__fadeInUp">
+        <h3 className="title font-semibold text-2xl w-full lg:w-1/2">[01] Resumen</h3>
+        <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3">
           <p className="max-w-prose">
             Key es una plataforma digital de oferta y demanda de espacios de
             trabajo específicos para perfiles profesionales creativos.
@@ -36,10 +36,10 @@ const Key = () => {
       {/* Research */}
       <section className="research flex flex-col gap-6 animate__animated animate__fadeInUp">
         <h3 className="title font-semibold text-2xl">[02] Research</h3>
-        <div className="subsection-group flex flex-col gap-28">
+        <div className="subsection-group flex flex-col gap-8 lg:gap-28">
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2 flex flex-col gap-4">
+          <div className="subsection flex flex-col lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg max-w-prose">
                 Compartir conocimientos y recursos, multidisciplinaridad y
                 espacios que generen confianza
@@ -60,7 +60,7 @@ const Key = () => {
                 </p>
               </div>
             </div>
-            <div className="right-wrapper w-1/2">
+            <div className="right-wrapper w-full lg:w-1/2">
               <img src="/key/key_target.png" alt="target" />
             </div>
           </div>
@@ -74,10 +74,10 @@ const Key = () => {
         <h3 className="title font-semibold text-2xl">
           [03] Contrucción del producto
         </h3>
-        <div className="subsection-group flex flex-col gap-28">
+        <div className="subsection-group flex flex-col gap-8 lg:gap-28">
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2 flex flex-col gap-4">
+          <div className="subsection flex flex-col lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg">Despejar el ruido</h4>
               <div className="text max-w-prose">
                 <p>
@@ -91,17 +91,17 @@ const Key = () => {
                 </p>
               </div>
             </div>
-            <div className="right-wrapper w-1/2">
+            <div className="right-wrapper w-full lg:w-1/2">
               <img src="/key/key_ai.png" alt="key information architecture" />
             </div>
           </div>
           {/* Subsection */}
           <div className="subsection">
-            <div className="flex justify-between gap-6">
-              <div className="left-wrapper w-1/2">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
+              <div className="left-wrapper w-full lg:w-1/2">
                 {/* <img src="/key/.png" alt="target" /> */}
               </div>
-              <div className="right-wrapper w-1/2 flex flex-col gap-4">
+              <div className="right-wrapper w-full lg:w-1/2 flex flex-col gap-4">
                 <h4 className="title font-semibold text-lg">
                   Diseño visual actual
                 </h4>
@@ -128,10 +128,10 @@ const Key = () => {
       {/* Producto final */}
       <section className="producto-final flex flex-col gap-6 animate__animated animate__fadeInUp">
         <h3 className="title font-semibold text-2xl">[04] Producto final</h3>
-        <div className="subsection-group flex flex-col gap-28">
+        <div className="subsection-group flex flex-col gap-8 lg:gap-28">
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2 flex flex-col gap-4">
+          <div className="subsection flex flex-col lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg">
                 Buscar un espacio de trabajo
               </h4>
@@ -146,7 +146,7 @@ const Key = () => {
                 </p>
               </div>
             </div>
-            <div className="right-wrapper w-1/2">
+            <div className="right-wrapper w-full lg:w-1/2">
               <img
                 src="/key/key_espacio-trabajo.png"
                 alt="key search work space"
@@ -154,14 +154,14 @@ const Key = () => {
             </div>
           </div>
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2">
+          <div className="subsection flex flex-col-reverse lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2">
               <img
                 src="/key/key_compa-trabajo.png"
                 alt="key search work space"
               />
             </div>
-            <div className="right-wrapper w-1/2 flex flex-col gap-4">
+            <div className="right-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg">
                 Buscar un compañero de trabajo con el que colaborar
               </h4>
@@ -176,8 +176,8 @@ const Key = () => {
             </div>
           </div>
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2 flex flex-col gap-4">
+          <div className="subsection flex flex-col lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg max-w-prose">
                 Publicar tu espacio de trabajo para una posible <br></br>{" "}
                 colaboración futura
@@ -193,7 +193,7 @@ const Key = () => {
                 </p>
               </div>
             </div>
-            <div className="right-wrapper w-1/2">
+            <div className="right-wrapper w-full lg:w-1/2">
               <img
                 src="/key/key_publicar-espacio.png"
                 alt="key work space announcement"

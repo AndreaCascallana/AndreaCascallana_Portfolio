@@ -2,12 +2,12 @@ import React from "react";
 
 const Plicoga = () => {
   return (
-    <div className="plicoga flex flex-col gap-28 pb-28">
+    <div className="plicoga flex flex-col gap-28 pb-12 lg:pb-28">
       {/* Hero */}
       <section className="hero flex flex-col justify-start gap-4 animate__animated animate__fadeInUp">
         <div className="title flex flex-col gap-1 w-full">
           <h1 className="proyect-name">PLICOGA</h1>
-          <h2 className="subtitle font-semibold text-4xl w-3/5">
+          <h2 className="subtitle font-semibold text-4xl lg:w-3/5">
             La plataforma para un perfecto manejo del alumbrado urbano
           </h2>
         </div>
@@ -21,7 +21,7 @@ const Plicoga = () => {
           <div className="subtitle flex gap-2 items-center">
             <img className="h-12" src="/plicoga/ging.png" alt="ging logo" />
             <a
-              className="border-custom"
+              className="border-custom invisible lg:visible"
               href="https://ging.github.io/"
               target="_blank"
             >
@@ -32,9 +32,9 @@ const Plicoga = () => {
       </section>
 
       {/* Resumen */}
-      <section className="resumen flex justify-between gap-4 animate__animated animate__fadeInUp">
-        <h3 className="title font-semibold text-2xl w-1/2">[01] Resumen</h3>
-        <div className="text flex flex-col gap-4 w-1/2 mt-3">
+      <section className="resumen flex flex-col lg:flex-row justify-between gap-4 animate__animated animate__fadeInUp">
+        <h3 className="title font-semibold text-2xl w-full lg:w-1/2">[01] Resumen</h3>
+        <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3">
           <p className="max-w-prose">
             PLICOGA es una plataforma integral de inspección, conservación, y
             control del alumbrado urbano.
@@ -57,10 +57,10 @@ const Plicoga = () => {
       {/* Research */}
       <section className="research flex flex-col gap-6 animate__animated animate__fadeInUp">
         <h3 className="title font-semibold text-2xl">[02] Research</h3>
-        <div className="subsection-group flex flex-col gap-28">
+        <div className="subsection-group flex flex-col gap-8 lg:gap-28">
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2 flex flex-col gap-4">
+          <div className="subsection flex flex-col lg:flex-row justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg">
                 Target heterogéneo
               </h4>
@@ -73,17 +73,17 @@ const Plicoga = () => {
                 </p>
               </div>
             </div>
-            <div className="right-wrapper w-1/2">
+            <div className="right-wrapper w-full lg:w-1/2">
               <img src="/plicoga/plicoga_target.png" alt="target" />
             </div>
           </div>
           {/* Subsection */}
           <div className="subsection">
-            <div className="flex justify-between gap-6">
-              <div className="left-wrapper w-1/2">
+            <div className="flex flex-col lg:flex-row justify-between gap-6">
+              <div className="left-wrapper w-full lg:w-1/2 invisible lg:visible">
                 {/* <img src="/plicoga/plicoga_research.png" alt="target" /> */}
               </div>
-              <div className="right-wrapper w-1/2 flex flex-col gap-4">
+              <div className="right-wrapper w-full lg:w-1/2 flex flex-col gap-4">
                 <h4 className="title font-semibold text-lg">
                   ¿Qué opina nuestro target?
                 </h4>
@@ -120,11 +120,11 @@ const Plicoga = () => {
         <h3 className="title font-semibold text-2xl">
           [03] Contrucción del producto
         </h3>
-        <div className="subsection-group flex flex-col gap-28">
+        <div className="subsection-group flex flex-col gap-8 lg:gap-28">
           {/* Subsection */}
           <div className="subsection">
-            <div className="flex justify-between gap-6">
-              <div className="left-wrapper w-1/2 flex flex-col gap-4">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
+              <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
                 <h4 className="title font-semibold text-lg">
                   El valor de PLICOGA
                 </h4>
@@ -144,7 +144,7 @@ const Plicoga = () => {
                   </p>
                 </div>
               </div>
-              <div className="right-wrapper w-1/2 flex flex-col gap-6">
+              <div className="right-wrapper w-full lg:w-1/2 flex flex-col gap-6">
                 <img
                   src="/plicoga/plicoga_propuesta-valor01.png"
                   alt="target"
@@ -162,11 +162,11 @@ const Plicoga = () => {
           </div>
 
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2">
+          <div className="subsection flex flex-col-reverse lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2">
               <img src="/plicoga/plicoga_ai.png" alt="target" />
             </div>
-            <div className="right-wrapper w-1/2 flex flex-col gap-4">
+            <div className="right-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg">
                 Navegación más intuitiva
               </h4>
@@ -185,8 +185,8 @@ const Plicoga = () => {
           </div>
           {/* Subsection */}
           <div className="subsection">
-            <div className="flex justify-between gap-6">
-              <div className="left-wrapper w-1/2 flex flex-col gap-4">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
+              <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
                 <div></div>
                 <h4 className="title font-semibold text-lg">
                   Sistema de diseño personalizado
@@ -230,10 +230,10 @@ const Plicoga = () => {
       {/* Producto final */}
       <section className="producto-final flex flex-col gap-6 animate__animated animate__fadeInUp">
         <h3 className="title font-semibold text-2xl">[04] Producto final</h3>
-        <div className="subsection-group flex flex-col gap-28">
+        <div className="subsection-group flex flex-col gap-8 lg:gap-28">
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2 flex flex-col gap-4">
+          <div className="subsection flex flex-col lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg">
                 Gestión de alarmas
               </h4>
@@ -262,16 +262,16 @@ const Plicoga = () => {
                 </p>
               </div>
             </div>
-            <div className="right-wrapper w-1/2">
+            <div className="right-wrapper w-full lg:w-1/2">
               <img src="/plicoga/plicoga_gestion-alarmas.png" alt="target" />
             </div>
           </div>
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2">
+          <div className="subsection flex flex-col-reverse lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2">
               <img src="/plicoga/plicoga_inventario.png" alt="target" />
             </div>
-            <div className="right-wrapper w-1/2 flex flex-col gap-4">
+            <div className="right-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg">
                 Edición de valores de los activos
               </h4>
@@ -289,8 +289,8 @@ const Plicoga = () => {
             </div>
           </div>
           {/* Subsection */}
-          <div className="subsection flex justify-between gap-6">
-            <div className="left-wrapper w-1/2 flex flex-col gap-4">
+          <div className="subsection flex flex-col lg:flex-row lg:justify-between gap-6">
+            <div className="left-wrapper w-full lg:w-1/2 flex flex-col gap-4">
               <h4 className="title font-semibold text-lg">
                 Gestión de usuarios: Añadir un nuevo integrante del equipo
               </h4>
@@ -302,7 +302,7 @@ const Plicoga = () => {
                 </p>
               </div>
             </div>
-            <div className="right-wrapper w-1/2">
+            <div className="right-wrapper w-full lg:w-1/2">
               <img src="/plicoga/plicoga_usuarios.png" alt="target" />
             </div>
           </div>

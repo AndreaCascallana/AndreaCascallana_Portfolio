@@ -102,7 +102,7 @@ const About = () => {
       <div className="right-wrapper lg:w-1/2 animate__animated animate__fadeIn overflow-hidden">
         <img
           className="w-full h-full object-cover rounded-md"
-          src="/about/Foto.jpeg"
+          src="/about/Retrato.png"
           alt="Retrato Andrea Cascallana"
         />
       </div>
