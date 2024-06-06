@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="about flex flex-col lg:flex-row gap-10 h-full">
+    <div className="about flex flex-col-reverse lg:flex-row gap-10 h-full">
       <div className="left-wrapper flex flex-col gap-10 h-full lg:w-1/2 pr-6">
         <div className="bio flex flex-col lg:flex-row animate__animated animate__fadeIn overflow-hidden">
           <div className="left-wrapper flex pb-2 lg:pb-0 mr-8 min-w-fit">
