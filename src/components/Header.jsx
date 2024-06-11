@@ -3,51 +3,53 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="menu flex flex-row justify-between items-center fixed top-0 right-0 left-0 m-auto lg:w-10/12 pt-8 pb-4 px-8 lg:px-0 animate__animated animate__fadeInDown z-40">
-      <NavLink
-        className={({ isActive }) =>
-          isActive
-            ? "cursor-hover uppercase hidden lg:block border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
-            : "cursor-hover uppercase hidden lg:block border-0 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
-        }
-        to="/"
-      >
-        ANDREA CASCALLANA
-      </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          isActive
-            ? "cursor-hover uppercase lg:hidden border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
-            : "cursor-hover uppercase lg:hidden border-0 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
-        }
-        to="/"
-      >
-        A
-      </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          isActive
-            ? "cursor-hover uppercase border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
-            : "cursor-hover uppercase border-0 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
-        }
-        to="/about"
-      >
-        Sobre mí
-      </NavLink>
-      <a
-        className="cursor-hover uppercase hidden lg:block border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
-        href="AndreaCascallana_CV.pdf"
-        download="AndreaCascallana_CV"
-      >
-        Descarga mi CV
-      </a>
-      <a
-        className="cursor-hover uppercase lg:hidden border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
-        href="AndreaCascallana_CV.pdf"
-        download="AndreaCascallana_CV"
-      >
-        CV
-      </a>
+    <div className="menu fixed top-0 right-0 left-0 lg:px-0 bg-slate-50 animate__animated animate__fadeInDown z-40">
+      <div className="container flex flex-row justify-between items-center m-auto lg:w-10/12 pt-8 pb-4 px-8 lg:px-0">
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "cursor-hover uppercase hidden lg:block border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
+              : "cursor-hover uppercase hidden lg:block border-0 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
+          }
+          to="/"
+        >
+          ANDREA CASCALLANA
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "cursor-hover uppercase lg:hidden border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
+              : "cursor-hover uppercase lg:hidden border-0 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
+          }
+          to="/"
+        >
+          A
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "cursor-hover uppercase border-b-[1px] border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
+              : "cursor-hover uppercase border-0 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
+          }
+          to="/about"
+        >
+          Sobre mí
+        </NavLink>
+        <a
+          className="cursor-hover uppercase hidden lg:block border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
+          href="AndreaCascallana_CV.pdf"
+          download="AndreaCascallana_CV"
+        >
+          Descarga mi CV
+        </a>
+        <a
+          className="cursor-hover uppercase lg:hidden border-b-slate-950 transition-all duration-150 ease-out hover:text-slate-600 hover:border-slate-600"
+          href="AndreaCascallana_CV.pdf"
+          download="AndreaCascallana_CV"
+        >
+          CV
+        </a>
+      </div>
     </div>
   );
 };
