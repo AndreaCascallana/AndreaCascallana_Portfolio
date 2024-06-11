@@ -17,6 +17,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.14.0
+  react-scroll-motion: ^0.3.3
   sass: ^1.63.6
   tailwind: ^4.0.0
   tailwindcss: ^3.3.2
@@ -29,6 +30,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.14.0_biqbaboplfbrettd7655fr4n2y
+  react-scroll-motion: 0.3.3_biqbaboplfbrettd7655fr4n2y
   sass: 1.63.6
 
 devDependencies:
@@ -2705,6 +2707,16 @@ packages:
     dependencies:
       '@remix-run/router': 1.7.0
       react: 18.2.0
+    dev: false
+
+  /react-scroll-motion/0.3.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Q33prpcdWDfQaHVmED7bo/EReUEBHfL6mOfvMGFP3FhDxTKddIoocMcd3bT9qw2KQ/fqNdJNADf7aiHWSLkXuQ==}
+    peerDependencies:
+      react: ^18.0.11
+      react-dom: ^18.0.11
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react/18.2.0:
