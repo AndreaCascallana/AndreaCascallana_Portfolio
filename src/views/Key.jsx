@@ -1,30 +1,56 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Key = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="key flex flex-col gap-48 pb-12 lg:pb-28">
       {/* Hero */}
-      <section className="hero flex flex-col justify-start gap-8 animate__animated animate__fadeInUp">
+      <section className="hero flex flex-col justify-start gap-8">
         <div className="title flex flex-col gap-4 w-full">
-          <h1 className="proyect-name">KEY</h1>
-          <h2 className="subtitle font-semibold text-4xl w-full lg:w-3/5">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="proyect-name"
+          >
+            KEY
+          </h1>
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="850"
+            className="subtitle font-semibold text-4xl w-full lg:w-3/5"
+          >
             ¿Buscamos tu próximo espacio de trabajo con Key?
           </h2>
         </div>
-        <img className="w-full" src="/key/key_hero.png" alt="key hero image" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="900"
+          className="w-full"
+          src="/key/key_hero.png"
+          alt="key hero image"
+        />
       </section>
 
       {/* Resumen */}
-      <section className="resumen flex flex-col lg:flex-row lg:justify-between gap-4 animate__animated animate__fadeInUp">
-        <h3 className="title font-semibold text-2xl uppercase w-full lg:w-1/2">
+      <section className="resumen flex flex-col lg:flex-row lg:justify-between gap-4">
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="800"
+          className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+        >
           [01] Resumen
         </h3>
         <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3">
-          <p className="max-w-prose">
+          <p data-aos="fade-up" data-aos-duration="800" className="max-w-prose">
             Key es una plataforma digital de oferta y demanda de espacios de
             trabajo específicos para perfiles profesionales creativos.
           </p>
-          <p className="max-w-prose">
+          <p data-aos="fade-up" data-aos-duration="850" className="max-w-prose">
             Por la naturaleza de las carreras creativas, los usuarios poseen
             unas necesidades espaciales y técnicas muy concretas que las
             plataformas actuales de búsqueda de espacios de trabajo no
@@ -33,21 +59,34 @@ const Key = () => {
         </div>
       </section>
 
-      <img src="/key/key_summary.png" alt="key summary image" />
+      <img
+        data-aos="fade-up"
+        data-aos-duration="800"
+        src="/key/key_summary.png"
+        alt="key summary image"
+      />
 
       {/* Research */}
       <div className="research flex flex-col gap-20 w-full">
-        <section className="research_target flex flex-col lg:flex-row justify-between gap-4 animate__animated animate__fadeInUp">
-          <h3 className="title font-semibold text-2xl uppercase w-full lg:w-1/2">
+        <section className="research_target flex flex-col lg:flex-row justify-between gap-4">
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+          >
             [02] Research
           </h3>
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-2 lg:pl-1">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Compartir conocimientos y recursos, multidisciplinaridad y
               espacios que generen confianza
             </h4>
             <div className="text max-w-prose">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="850">
                 Estos son los principales{" "}
                 <span className="font-semibold">insights</span> extraídos de las{" "}
                 <span className="font-semibold">entrevistas abiertas</span>{" "}
@@ -63,19 +102,34 @@ const Key = () => {
           </div>
         </section>
 
-        <img src="/key/key_target.png" alt="target" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/key/key_target.png"
+          alt="target"
+        />
       </div>
 
       {/* Construcción del producto */}
       <div className="research flex flex-col gap-20 w-full">
-        <section className="research_target flex flex-col lg:flex-row justify-between gap-4 animate__animated animate__fadeInUp">
-          <h3 className="title font-semibold text-2xl uppercase w-full lg:w-1/2">
+        <section className="research_target flex flex-col lg:flex-row justify-between gap-4">
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+          >
             [03] Contrucción del producto
           </h3>
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-2 lg:pl-1">
-            <h4 className="title font-semibold text-xl">Despejar el ruido</h4>
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
+              Despejar el ruido
+            </h4>
             <div className="text max-w-prose">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="850">
                 Key persigue un claro objetivo: Encontrar espacios de trabajo y
                 compañeros que cohabiten en él. Por ello mediante un ejercicio
                 de{" "}
@@ -88,21 +142,30 @@ const Key = () => {
           </div>
         </section>
 
-        <img src="/key/key_ai.png" alt="key information architecture" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/key/key_ai.png"
+          alt="key information architecture"
+        />
 
-        <section className="research_target_insights flex justify-end animate__animated animate__fadeInUp">
+        <section className="research_target_insights flex justify-end">
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-2">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Diseño visual actual
             </h4>
             <div className="text max-w-prose">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="850">
                 Se desarrolla un{" "}
                 <span className="font-semibold">sistema de diseño</span> que
                 mezcla dos tendencias de diseño: El Flat Design y la estética
                 Brutalista.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-duration="900">
                 Se pretende dar un aire juvenil mediante el brutalismo pero sin
                 abandonar el diseño accesible e intuitivo tan característico del
                 Flat Design.
@@ -111,21 +174,34 @@ const Key = () => {
           </div>
         </section>
 
-        <img src="/key/key_design-system.png" alt="key design system" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/key/key_design-system.png"
+          alt="key design system"
+        />
       </div>
 
       {/* Producto final */}
       <div className="final-product flex flex-col gap-20 w-full">
-        <section className="gestion-alarmas flex flex-col lg:flex-row justify-between gap-4 animate__animated animate__fadeInUp">
-          <h3 className="title font-semibold text-2xl uppercase w-full lg:w-1/2">
+        <section className="gestion-alarmas flex flex-col lg:flex-row justify-between gap-4">
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+          >
             [04] Producto final
           </h3>
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-2 lg:pl-4">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Buscar un espacio de trabajo
             </h4>
             <div className="text max-w-prose">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="850">
                 Con Key encuentra de forma rápida y eficaz el espacio de trabajo
                 que mejor se ajuste a tus necesidades profesionales. Tan solo
                 respondiendo a las preguntas: ¿Qué? ¿dónde? y ¿cuándo? obtendrás
@@ -137,15 +213,24 @@ const Key = () => {
           </div>
         </section>
 
-        <img src="/key/key_espacio-trabajo.png" alt="key search work space" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/key/key_espacio-trabajo.png"
+          alt="key search work space"
+        />
 
-        <section className="editar-inventario flex justify-end animate__animated animate__fadeInUp">
+        <section className="editar-inventario flex justify-end">
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-5">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Encontrar un compañero de trabajo con el que colaborar
             </h4>
             <div className="text max-w-prose">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="850">
                 ¿Necesitas un segundo par de manos para tu próximo proyecto? ¿Se
                 ha quedado libre un hueco en tu coworking? En Key además de
                 buscar espacios de trabajo puedes encontrar futuros compañeros
@@ -155,16 +240,25 @@ const Key = () => {
           </div>
         </section>
 
-        <img src="/key/key_compa-trabajo.png" alt="key search work space" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/key/key_compa-trabajo.png"
+          alt="key search work space"
+        />
 
-        <section className="editar-inventario flex justify-end animate__animated animate__fadeInUp">
+        <section className="editar-inventario flex justify-end">
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-5">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Publicar tu espacio de trabajo para una posible <br></br>{" "}
               colaboración futura
             </h4>
             <div className="text max-w-prose">
-              <p className="mb-4">
+              <p data-aos="fade-up" data-aos-duration="850" className="mb-4">
                 Compartir es vivir. Un espacio completo, un simple escritorio en
                 un coworking o una mera herramienta de trabajo, pueden ser
                 compartidos gracias a Key. Respondiendo a unas pocas preguntas,
@@ -177,6 +271,8 @@ const Key = () => {
         </section>
 
         <img
+          data-aos="fade-up"
+          data-aos-duration="800"
           src="/key/key_publicar-espacio.png"
           alt="key work space announcement"
         />

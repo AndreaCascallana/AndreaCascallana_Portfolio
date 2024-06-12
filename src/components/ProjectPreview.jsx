@@ -20,7 +20,7 @@ const ProjectPreview = (props) => {
         <div className="image rounded-md h-full overflow-hidden animate__animated animate__fadeIn">
           <Link to={props.page}>
             <img
-              className="project-preview w-full h-full object-cover rounded-md"
+              className="project-preview w-full h-full object-cover rounded-md transition ease-in-out duration-300 hover:scale-105"
               src={props.image}
               alt={props.alt}
             />

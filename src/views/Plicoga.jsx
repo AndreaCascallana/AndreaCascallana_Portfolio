@@ -1,26 +1,58 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Plicoga = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="plicoga flex flex-col gap-48 pb-12 lg:pb-28">
       {/* Hero */}
       <section className="hero flex flex-col justify-start gap-8 animate__animated animate__fadeInUp">
         <div className="title flex flex-col gap-4 w-full">
-          <h1 className="proyect-name">PLICOGA</h1>
-          <h2 className="subtitle font-semibold text-4xl lg:w-3/5">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="proyect-name"
+          >
+            PLICOGA
+          </h1>
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="850"
+            className="subtitle font-semibold text-4xl lg:w-3/5"
+          >
             La plataforma para un perfecto manejo del alumbrado urbano
           </h2>
         </div>
         <img
+          data-aos="fade-up"
+          data-aos-duration="900"
           className="w-full"
           src="/plicoga/plicoga_hero.png"
           alt="plicoga hero image"
         />
         <div className="team flex flex-col gap-2 w-full">
-          <p className="title font-semibold text-xl">Equipo involucrado</p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="title font-semibold text-xl"
+          >
+            Equipo involucrado
+          </p>
           <div className="subtitle flex gap-2 items-center">
-            <img className="h-12" src="/plicoga/ging.png" alt="ging logo" />
+            <img
+              data-aos="fade-up"
+              data-aos-duration="850"
+              className="h-12"
+              src="/plicoga/ging.png"
+              alt="ging logo"
+            />
             <a
+              data-aos="fade-up"
+              data-aos-duration="900"
               className="border-custom invisible lg:visible"
               href="https://ging.github.io/"
               target="_blank"
@@ -33,39 +65,58 @@ const Plicoga = () => {
 
       {/* Resumen */}
       <section className="resumen flex flex-col lg:flex-row justify-between gap-4 animate__animated animate__fadeInUp">
-        <h3 className="title font-semibold text-2xl uppercase w-full lg:w-1/2">
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="800"
+          className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+        >
           [01] Resumen
         </h3>
         <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3">
-          <p className="max-w-prose">
+          <p data-aos="fade-up" data-aos-duration="800" className="max-w-prose">
             PLICOGA es una plataforma integral de inspección, conservación, y
             control del alumbrado urbano.
           </p>
-          <p className="max-w-prose">
+          <p data-aos="fade-up" data-aos-duration="850" className="max-w-prose">
             Hasta ahora las plataformas autonómicas de control y gestión del
             alumbrado urbano presentan grandes problemas de usabilidad: Las
             diferentes tareas del usuario están descentralizadas, la interfaz de
             usuario es muy compleja e ineficiente...
           </p>
-          <p className="max-w-prose">
+          <p data-aos="fade-up" data-aos-duration="900" className="max-w-prose">
             Por ello, con PLICOGA se buscará favorecer la interacción Usuario -
             Dato gracias una mejora de la interfaz de usuario.{" "}
           </p>
         </div>
       </section>
 
-      <img src="/plicoga/plicoga_summary.png" alt="plicoga summary image" />
+      <img
+        data-aos="fade-up"
+        data-aos-duration="800"
+        src="/plicoga/plicoga_summary.png"
+        alt="plicoga summary image"
+      />
 
       {/* Research */}
       <div className="research flex flex-col gap-20 w-full">
         <section className="research_target flex flex-col lg:flex-row justify-between gap-4 animate__animated animate__fadeInUp">
-          <h3 className="title font-semibold text-2xl uppercase w-full lg:w-1/2">
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+          >
             [02] Research
           </h3>
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-2 lg:pl-1">
-            <h4 className="title font-semibold text-xl">Target heterogéneo</h4>
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
+              Target heterogéneo
+            </h4>
             <div className="text max-w-prose">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="850">
                 Técnicos de oficina, conductores de flotas de vehículos,
                 personal de mantenimiento... Además, cada cargo cuenta con
                 diferentes niveles de profesionalización, es decir, perfiles
@@ -77,11 +128,15 @@ const Plicoga = () => {
 
         <div className="research_target_img flex flex-col lg:flex-row justify-between gap-4 w-full pr-4">
           <img
+            data-aos="fade-up"
+            data-aos-duration="800"
             className=" w-full lg:w-1/2"
             src="/plicoga/plicoga_office-target.png"
             alt="office target"
           />
           <img
+            data-aos="fade-up"
+            data-aos-duration="1000"
             className="w-full lg:w-1/2"
             src="/plicoga/plicoga_maintenance-target.png"
             alt="maintenance target"
@@ -90,11 +145,15 @@ const Plicoga = () => {
 
         <section className="research_target_insights flex justify-end animate__animated animate__fadeInUp">
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-2">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               ¿Qué opina nuestro target?
             </h4>
             <div className="text max-w-prose">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="800">
                 Después de conocer las ganancias y los dolores que experimentan
                 los usuarios con respecto a las plataformas actuales, PLICOGA
                 ofrece una serie de{" "}
@@ -111,19 +170,28 @@ const Plicoga = () => {
           </div>
         </section>
 
-        <img src="/plicoga/plicoga_research.png" alt="plicoga research image" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/plicoga/plicoga_research.png"
+          alt="plicoga research image"
+        />
       </div>
 
       {/* Construcción del producto */}
       <div className="product-build flex flex-col gap-20">
         <section className="research_target flex flex-col lg:flex-row justify-between gap-4 animate__animated animate__fadeInUp">
-          <h3 className="title font-semibold text-2xl uppercase w-full lg:w-1/2">
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+          >
             [03] Contrucción del producto
           </h3>
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-1">
             <h4 className="title font-semibold text-xl">El valor de PLICOGA</h4>
             <div className="text max-w-prose flex flex-col gap-4">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="800">
                 Después de conocer las ganancias y los dolores que experimentan
                 los usuarios con respecto a las plataformas actuales, PLICOGA
                 ofrece una serie de{" "}
@@ -136,7 +204,7 @@ const Plicoga = () => {
                 </span>
                 .
               </p>
-              <p className="">
+              <p data-aos="fade-up" data-aos-duration="850">
                 Los principales{" "}
                 <span className="font-semibold">aliviadores de dolor</span> son:
                 Aportar feedback constante al usuario, otorgarle al usuario la
@@ -150,17 +218,23 @@ const Plicoga = () => {
         <div className="research_target_img flex flex-col gap-4">
           <div className="flex flex-col lg:flex-row gap-4 pr-4">
             <img
+              data-aos="fade-up"
+              data-aos-duration="800"
               className="w-full lg:w-1/2"
               src="/plicoga/plicoga_propuesta-valor01.png"
               alt="first value proposition:"
             />
             <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
               className="w-full lg:w-1/2"
               src="/plicoga/plicoga_propuesta-valor02.png"
               alt="second value proposition:"
             />
           </div>
           <img
+            data-aos="fade-up"
+            data-aos-duration="1000"
             className="w-full"
             src="/plicoga/plicoga_propuesta-valor03.png"
             alt="third value proposition:"
@@ -169,11 +243,15 @@ const Plicoga = () => {
 
         <section className="research_target_insights flex justify-end animate__animated animate__fadeInUp">
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-4">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Navegación más intuitiva
             </h4>
             <div className="text max-w-prose">
-              <p>
+              <p data-aos="fade-up" data-aos-duration="800">
                 Uno de los principales aliviadores de dolor era mejorar la
                 navegación de la plataforma, por ello se incide en la{" "}
                 <span className="font-medium">
@@ -186,15 +264,24 @@ const Plicoga = () => {
           </div>
         </section>
 
-        <img src="/plicoga/plicoga_ai.png" alt="target" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/plicoga/plicoga_ai.png"
+          alt="target"
+        />
 
         <section className="research_target_insights flex justify-end animate__animated animate__fadeInUp">
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 pl-4">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Sistema de diseño personalizado
             </h4>
             <div className="text max-w-prose">
-              <p className="mb-4">
+              <p data-aos="fade-up" data-aos-duration="800" className="mb-4">
                 Para la plataforma se desarrolla un{" "}
                 <span className="font-medium">
                   sistema de diseño personalizado que vaya acorde al manual de
@@ -202,7 +289,7 @@ const Plicoga = () => {
                 </span>{" "}
                 establecido por la institución pública que actúa como cliente.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-duration="850">
                 Para su elaboración, se persigue la filosofía{" "}
                 <a
                   className="border-custom font-medium"
@@ -221,6 +308,8 @@ const Plicoga = () => {
         </section>
 
         <img
+          data-aos="fade-up"
+          data-aos-duration="800"
           src="/plicoga/plicoga_design-system.png"
           alt="plicoga design-system"
         />
@@ -229,29 +318,39 @@ const Plicoga = () => {
       {/* Producto final */}
       <div className="final-product flex flex-col gap-20 w-full">
         <section className="gestion-alarmas flex flex-col lg:flex-row justify-between gap-4 animate__animated animate__fadeInUp">
-          <h3 className="title font-semibold text-2xl uppercase w-full lg:w-1/2">
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="800"
+            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+          >
             [04] Producto final
           </h3>
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-2 lg:pl-4">
-            <h4 className="title font-semibold text-xl">Gestión de alarmas</h4>
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
+              Gestión de alarmas
+            </h4>
             <div className="text max-w-prose">
-              <p className="pb-4">
+              <p data-aos="fade-up" data-aos-duration="800" className="pb-4">
                 Cualquier incidencia se notificará al usuario tanto en el mapa
                 como en la tabla enriquecida bajo éste, mediante un indicador
                 rojo personalizado para cada contexto.
               </p>
-              <p className="pb-4">
+              <p data-aos="fade-up" data-aos-duration="850" className="pb-4">
                 En un solo vistazo el usuario podrá ver qué componente está
                 afectado y porqué en el apartado "Estado" de la tabla
                 enriquecida.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-duration="900">
                 Para no perder la comunicación constante con el resto de
                 compañeros y sobretodo, no superponer procesos, el usuario podrá
                 asignarse como responsable para la resolución de dicha
                 incidencia.
               </p>
-              <p className="pb-4">
+              <p data-aos="fade-up" data-aos-duration="950" className="pb-4">
                 Por último, la tabla enriquecida ofrece la posibilidad de
                 realizar acciones inmediatas para la resolución de incidencias.
                 Además, el usuario podrá hacer un seguimiento del estado de la
@@ -262,21 +361,30 @@ const Plicoga = () => {
         </section>
 
         <div className="gestion-alarmas_img">
-          <img src="/plicoga/plicoga_gestion-alarmas.png" alt="target" />
+          <img
+            data-aos="fade-up"
+            data-aos-duration="800"
+            src="/plicoga/plicoga_gestion-alarmas.png"
+            alt="target"
+          />
         </div>
 
         <section className="editar-inventario flex justify-end animate__animated animate__fadeInUp">
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-5">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Edición de valores de los activos
             </h4>
             <div className="text max-w-prose">
-              <p className="pb-4">
+              <p data-aos="fade-up" data-aos-duration="800" className="pb-4">
                 PLICOGA ofrece una visualización de todos los activos de la
                 compañía en un inventario. Para mejorar la visualización y la
                 experiencia, los activos se dividen en categorías.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-duration="850">
                 Todos los valores y propiedades de cada activo podrán ser
                 modificados por el usuario siempre que su trabajo lo requiera.
               </p>
@@ -284,15 +392,24 @@ const Plicoga = () => {
           </div>
         </section>
 
-        <img src="/plicoga/plicoga_inventario.png" alt="target" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/plicoga/plicoga_inventario.png"
+          alt="target"
+        />
 
         <section className="editar-inventario flex justify-end animate__animated animate__fadeInUp">
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-5">
-            <h4 className="title font-semibold text-xl">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
               Gestión de usuarios: Añadir un nuevo integrante del equipo
             </h4>
             <div className="text max-w-prose">
-              <p className="mb-4">
+              <p data-aos="fade-up" data-aos-duration="800" className="mb-4">
                 La plataforma dedica una página para a la gestión de usuarios.
                 Aquí el personal habilitado podrá visualizar los datos de cada
                 empleado como modificarlos.
@@ -301,7 +418,12 @@ const Plicoga = () => {
           </div>
         </section>
 
-        <img src="/plicoga/plicoga_usuarios.png" alt="target" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/plicoga/plicoga_usuarios.png"
+          alt="target"
+        />
       </div>
     </div>
   );
