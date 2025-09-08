@@ -8,7 +8,7 @@ const Plicoga = () => {
   }, []);
 
   return (
-    <div className="plicoga flex flex-col gap-24 lg:gap-48 pb-12 lg:pb-28">
+    <div className="plicoga flex flex-col gap-24 lg:gap-48 pb-28">
       {/* Hero */}
       <section className="hero flex flex-col justify-start gap-8 animate__animated animate__fadeInUp">
         <div className="title flex flex-col gap-4 w-full">
@@ -22,7 +22,7 @@ const Plicoga = () => {
           <h2
             data-aos="fade-up"
             data-aos-duration="850"
-            className="subtitle font-semibold text-2xl md:text-3xl lg:text-4xl w-full lg:w-3/5"
+            className="subtitle font-semibold text-2xl md:text-3xl lg:text-5xl w-full lg:w-3/5"
           >
             La plataforma para un perfecto manejo del alumbrado urbano
           </h2>
@@ -68,9 +68,9 @@ const Plicoga = () => {
         <h3
           data-aos="fade-up"
           data-aos-duration="800"
-          className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+          className="title font-semibold text-2xl md:text-3xl lg:text-4xl uppercase w-full lg:w-1/2"
         >
-          [01] Resumen
+          Resumen
         </h3>
         <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3">
           <p data-aos="fade-up" data-aos-duration="800" className="max-w-prose">
@@ -103,11 +103,11 @@ const Plicoga = () => {
           <h3
             data-aos="fade-up"
             data-aos-duration="800"
-            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+            className="title font-semibold text-2xl md:text-3xl lg:text-4xl uppercase w-full lg:w-1/2"
           >
-            [02] Research
+            Research
           </h3>
-          <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-2 lg:pl-1">
+          <div className="text flex flex-col gap-4 w-full lg:w-1/2 lg:pl-1">
             <h4
               data-aos="fade-up"
               data-aos-duration="800"
@@ -192,11 +192,11 @@ const Plicoga = () => {
           <h3
             data-aos="fade-up"
             data-aos-duration="800"
-            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+            className="title font-semibold text-2xl md:text-3xl lg:text-4xl uppercase w-full lg:w-1/2"
           >
-            [03] Contrucción del producto
+            Contrucción <br></br>{" "} del producto
           </h3>
-          <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-1">
+          <div className="text flex flex-col gap-4 w-full lg:w-1/2 lg:pl-1">
             <h4
               data-aos="fade-up"
               data-aos-duration="800"
@@ -330,9 +330,9 @@ const Plicoga = () => {
           <h3
             data-aos="fade-up"
             data-aos-duration="800"
-            className="title font-semibold text-2xl uppercase w-full lg:w-1/2"
+            className="title font-semibold text-2xl md:text-3xl lg:text-4xl uppercase w-full lg:w-1/2"
           >
-            [04] Producto final
+            Producto final
           </h3>
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-2 lg:pl-4">
             <h4

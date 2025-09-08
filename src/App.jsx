@@ -30,7 +30,7 @@ const App = () => {
     <div className="app m-auto w-screen h-screen lg:w-10/12 flex flex-col py-8">
       <Header></Header>
 
-      <div className="main grow mx-8 lg:mx-0 mt-16 pb-20 lg:py-0 lg:my-20">
+      <div className="main mx-8 lg:mx-0 mt-20 pb-20 lg:py-0 lg:mt-24 h-full">
         <Routing></Routing>
       </div>
 

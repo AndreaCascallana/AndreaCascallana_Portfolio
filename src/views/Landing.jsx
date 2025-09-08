@@ -4,9 +4,8 @@ import ProjectPreview from "../components/ProjectPreview";
 
 const Hero = () => {
   return (
-    <div className="landing-container flex flex-col lg:flex-row gap-5 lg:gap-10 h-full">
+    <div className="landing-container flex flex-col gap-10 pb-24 lg:flex-row lg:flex-wrap">
       <ProjectPreview
-        number="[01]"
         title="PLICOGA"
         subtitle="UX/UI Design + Front-End Development"
         page="/plicoga"
@@ -15,13 +14,20 @@ const Hero = () => {
       ></ProjectPreview>
 
       <ProjectPreview
-        number="[02]"
         title="KEY"
         subtitle="UX/UI Design"
         page="/key"
         image="/landing/key.png"
         alt="key preview image"
       ></ProjectPreview>
+
+      {/* <ProjectPreview
+        title="CONNECTO"
+        subtitle="UX/UI Design"
+        page="/*"
+        image="/landing/key.png"
+        alt="connecto preview image"
+      ></ProjectPreview> */}
     </div>
   );
 };
