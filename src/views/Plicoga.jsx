@@ -8,7 +8,7 @@ const Plicoga = () => {
   }, []);
 
   return (
-    <div className="plicoga flex flex-col gap-48 pb-12 lg:pb-28">
+    <div className="plicoga flex flex-col gap-24 lg:gap-48 pb-12 lg:pb-28">
       {/* Hero */}
       <section className="hero flex flex-col justify-start gap-8 animate__animated animate__fadeInUp">
         <div className="title flex flex-col gap-4 w-full">
@@ -22,7 +22,7 @@ const Plicoga = () => {
           <h2
             data-aos="fade-up"
             data-aos-duration="850"
-            className="subtitle font-semibold text-4xl lg:w-3/5"
+            className="subtitle font-semibold text-2xl md:text-3xl lg:text-4xl w-full lg:w-3/5"
           >
             La plataforma para un perfecto manejo del alumbrado urbano
           </h2>
@@ -171,9 +171,17 @@ const Plicoga = () => {
         </section>
 
         <img
+          className="hidden lg:block"
           data-aos="fade-up"
           data-aos-duration="800"
           src="/plicoga/plicoga_research.png"
+          alt="plicoga research image"
+        />
+        <img
+          className="lg:hidden block"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/plicoga/plicoga_research02.png"
           alt="plicoga research image"
         />
       </div>
@@ -189,21 +197,14 @@ const Plicoga = () => {
             [03] Contrucción del producto
           </h3>
           <div className="text flex flex-col gap-4 w-full lg:w-1/2 mt-3 lg:pl-1">
-            <h4 className="title font-semibold text-xl">El valor de PLICOGA</h4>
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="800"
+              className="title font-semibold text-xl"
+            >
+              El valor de PLICOGA
+            </h4>
             <div className="text max-w-prose flex flex-col gap-4">
-              <p data-aos="fade-up" data-aos-duration="800">
-                Después de conocer las ganancias y los dolores que experimentan
-                los usuarios con respecto a las plataformas actuales, PLICOGA
-                ofrece una serie de{" "}
-                <span className="font-medium">
-                  generadores de ganancias y analgésicos
-                </span>{" "}
-                definidos gracias a un{" "}
-                <span className="font-medium">
-                  lienzo de propuesta de valor
-                </span>
-                .
-              </p>
               <p data-aos="fade-up" data-aos-duration="850">
                 Los principales{" "}
                 <span className="font-semibold">aliviadores de dolor</span> son:
@@ -308,9 +309,17 @@ const Plicoga = () => {
         </section>
 
         <img
+          className="hidden lg:block"
           data-aos="fade-up"
           data-aos-duration="800"
           src="/plicoga/plicoga_design-system.png"
+          alt="plicoga design-system"
+        />
+        <img
+          className="lg:hidden block"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/plicoga/plicoga_design-system02.png"
           alt="plicoga design-system"
         />
       </div>

@@ -8,7 +8,7 @@ const Key = () => {
   }, []);
 
   return (
-    <div className="key flex flex-col gap-48 pb-12 lg:pb-28">
+    <div className="key flex flex-col gap-24 lg:gap-48 pb-12 lg:pb-28">
       {/* Hero */}
       <section className="hero flex flex-col justify-start gap-8">
         <div className="title flex flex-col gap-4 w-full">
@@ -22,7 +22,7 @@ const Key = () => {
           <h2
             data-aos="fade-up"
             data-aos-duration="850"
-            className="subtitle font-semibold text-4xl w-full lg:w-3/5"
+            className="subtitle font-semibold text-2xl md:text-3xl lg:text-4xl w-full lg:w-3/5"
           >
             ¿Buscamos tu próximo espacio de trabajo con Key?
           </h2>
@@ -175,9 +175,17 @@ const Key = () => {
         </section>
 
         <img
+          className="hidden lg:block"
           data-aos="fade-up"
           data-aos-duration="800"
           src="/key/key_design-system.png"
+          alt="key design system"
+        />
+        <img
+          className="block lg:hidden"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          src="/key/key_design-system02.png"
           alt="key design system"
         />
       </div>
