@@ -8,7 +8,7 @@ const Footer = () => {
           Diseñado y desarrollado por Andrea Cascallana
         </p>
         <p className="text-sm text-center lg:text-end w-full lg:w-[312px]">
-          Última actualización 2024
+          Última actualización 2025
         </p>
       </div>
     </div>

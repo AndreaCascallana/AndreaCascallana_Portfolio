@@ -17,28 +17,14 @@ const About = () => {
             </div>
             <div className="content flex flex-col gap-1">
               <p className="max-w-prose">
-                UX/UI Designer y Front-End Developer, pero sobretodo muy friki de los Sistemas de Diseño.
+                UX/UI Designer y Front-End Developer, pero sobretodo muy friki
+                de los Sistemas de Diseño.
               </p>
               <p className="max-w-prose">
                 Tengo experiencia trabajando junto a equipos multidisciplinares
-                dentro de{" "}
-                <a
-                  className="border-custom"
-                  href="https://ging.github.io/"
-                  target="_blank"
-                >
-                  grupos de investigación
-                </a>{" "}
-                o{" "}
-                <a
-                  className="border-custom"
-                  href="https://www.redbility.com/"
-                  target="_blank"
-                >
-                  consultoras{" "}
-                </a>
-                donde he colaborado en proyectos para pequeñas empresas y
-                reconocidas multinacionales.
+                dentro de grupos de investigación y en consultoras donde he
+                colaborado en proyectos para diversoss clientes: Startups,
+                reconocidas multinacionales y empresas del IBEX-35.
               </p>
             </div>
           </div>
@@ -61,7 +47,9 @@ const About = () => {
                 target="_blank"
               >
                 <img src="/about/mail.svg" alt="mail icon" />
-                <span className="border-custom">andreacascallanarodriguez@gmail.com</span>
+                <span className="border-custom">
+                  andreacascallanarodriguez@gmail.com
+                </span>
               </a>
               <a
                 className="lg:hidden flex gap-2 items-center animate__animated animate__fadeIn overflow-hidden"
@@ -78,14 +66,6 @@ const About = () => {
               >
                 <img src="/about/linkedin.svg" alt="linkedin icon" />
                 <span className="border-custom">Linkedin</span>
-              </a>
-              <a
-                className="flex gap-2 items-center animate__animated animate__fadeIn overflow-hidden"
-                href="https://github.com/AndreaCascallana"
-                target="_blank"
-              >
-                <img src="/about/github.svg" alt="github icon" />
-                <span className="border-custom">Github</span>
               </a>
               <a
                 className="flex gap-2 items-center animate__animated animate__fadeIn overflow-hidden"
