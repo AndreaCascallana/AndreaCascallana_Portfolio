@@ -36,7 +36,7 @@ const Header = () => {
           Sobre mí
         </NavLink>
         <a
-          className="cursor-hover uppercase hidden lg:block py-2 px-4 border border-slate-950 rounded-full transition-colors duration-300 ease-in-out hover:text-slate-700 hover:border-slate-600 hover:bg-slate-200"
+          className="cursor-hover uppercase hidden lg:block py-2 px-4 border border-slate-950 rounded-full transition-colors duration-300 ease-in-out hover:text-slate-50 hover:border-slate-50 hover:bg-slate-950"
           href="/landing/AndreaCascallana_CV.pdf"
           download="AndreaCascallana_CV"
         >
